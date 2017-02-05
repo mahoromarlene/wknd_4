@@ -32,23 +32,23 @@ class SimpleCalculator
 
 end
 
-class FancyCalculator
+class FancyCalculator < SimpleCalculator
 
-  def add(first_number, second_number)
-    first_number + second_number
-  end
+  # def add(first_number, second_number)
+  #   first_number + second_number
+  # end
 
-  def subtract(first_number, second_number)
-    first_number - second_number
-  end
+  # def subtract(first_number, second_number)
+  #   first_number - second_number
+  # end
 
-  def multiply(first_number, second_number)
-    first_number * second_number
-  end
+  # def multiply(first_number, second_number)
+  #   first_number * second_number
+  # end
 
-  def divide(first_number, second_number)
-    first_number / second_number
-  end
+  # def divide(first_number, second_number)
+  #   first_number / second_number
+  # end
 
   def square_root(number)
     Math.sqrt(number)
@@ -58,3 +58,7 @@ end
 
 # Write your own driver code below:
 
+simpleCalculator = SimpleCalculator.new
+fancyCalculator = FancyCalculator.new
+puts simpleCalculator.multiply(6, 7)
+puts fancyCalculator.square_root(81)
