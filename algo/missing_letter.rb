@@ -3,7 +3,14 @@
 # bonus: returns a string of all missing letters as a string. ex: find_missing_letter("ace") would return "bd", write your own test.
 
 def find_missing_letter(range)
+  array_element = range.split("")
+  range = Array(array_element[0]..array_element[-1])
 
+  if range != array_element
+    return (range - array_element).join("")
+  else
+    return nil
+  end 
 end
 
 # Driver code - don't touch anything below this line.
